@@ -12,12 +12,12 @@ also included in code.
 ## 3.Load metadata
 size=17534
 
-## 4.Defining load image fumction for reading image 
+## 4.Defining load image function for reading image 
     OpenCV loads images with color channels in BGR order. So we need to reverse them
 
 ## 5.We have given the predefined model for VGG face
   VGGFace network architecture VGGFace model uses size. Fig 2 shows the dimensions of the layers (height, width, depth). Convolutional layers are accompanied by ReLU rectification units. The last 3 layers are fully connected (FC). The output dimension of the first two FC layers and is 4096 each, of the last FC layer ( 2622.
-  //as we were not able to integrate due to libraries error we have predefined it.
+  //as we were not able to integrate due to libraries error we have predefined it. The architecture is given below:
   ![VGGFace-network-architecture-VGGFace-model-uses-size-Fig-2-shows-the-dimensions-of-the (1)](https://github.com/RimshaNadeem20k1870/Celebrity-Face-Recognition-using-VGGFace-Model/assets/145101419/72d23e6e-bd9c-4071-89ff-8a0b27021853)
   
 ## 6.Load the model defined and Then load the given weight file named "vgg_face_weights.h5" 
