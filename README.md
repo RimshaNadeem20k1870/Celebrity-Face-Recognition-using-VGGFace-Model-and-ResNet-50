@@ -1,4 +1,4 @@
-# Celebrity-Face-Recognition-using-VGGFace-Model
+# 1. Celebrity-Face-Recognition-using-VGGFace-Model
 We using a pre-trained model trained on Face recognition to recognize similar faces. Here, we are particularly interested in recognizing whether two given faces are of the same celebrity or not.
 // pretrained models- models that are trained on large datsets and can be integrated using tensorfloe,keras, etc
 
@@ -48,4 +48,28 @@ Standardizing feature values refers to the process of scaling the values of feat
 
 ## 15.  We are taking example indexes and loading images from data and identifying the celebrity.
 
-## 16.Accuracy Score: 96.455%         
+## 16.Accuracy Score: 96.455%    
+
+
+# 2. Celebrity Face Matching using MTCNN and ResNet-50
+The purpose of this project is to utilise a dataset of celebrity faces and extract their features. It then matches an input image to a celebrity in the dataset based on the extracted features.
+
+## 1. Technologies
+-Python - code was done on Google Colab <br>
+-Tensorflow<br>
+-Keras<br>
+-MTCNN<br>
+-ResNet-50<br>
+
+## 2. Implementation
+This code is done using python, tensorflow and utilises MTCNN (Multi-Task Cascaded Convolutional Neural Network) which is used for face detection, alongside ResNet-50 model.<br>
+This model extracts high-level features from images, in this case it would be about the set of the jaw, the face shape, eye shape, cheekbone structure etc.<br>
+The model is trained to extract these features, and they are stored in a embeddings.pkl file for later similarity comparison.<br>
+Similarly MTCNN is used to extract faces from the input image and the ResNet-50 model extracts features to map onto the dataset image features.<br>
+Finally, cosine similarity is used to map the image to the dataset images.<br>
+
+### Results
+At the current stage of the model training, the code has medium to low accuracy and some recurring errors.
+
+## 3. Dataset
+The Dataset has been taken from [Kaggle](https://www.kaggle.com/datasets/havingfun/100-bollywood-celebrity-faces/code). This dataset contains images of faces of bollywood actors and actresses.
